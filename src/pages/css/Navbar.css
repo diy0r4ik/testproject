@@ -1,0 +1,200 @@
+.Navbar{
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.Nav_logo{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Logo{
+    width: 100px;
+    margin-top: 1%;
+    margin-left: 4%;
+    /* border: 1px solid black; */
+    /* border-radius: 60px; */
+}
+.Nav_phone{
+    font-size: 18px;
+    color: #ffbf00;
+}
+.Nav_right{
+    /* width: 20%; */
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.Nav_search{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Input_a{
+    width: 49%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.Input_a input{
+    width: 100%;
+    border-radius: 60px;
+    border: none;
+    padding: 8px 20px;
+    background-color: #f4f8f7;
+    font-size: 15px;
+    transition: all 1s;
+}
+.Input_a input:hover{
+    box-shadow: 0px 0px 33px -4px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 0px 0px 33px -4px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px 33px -4px rgba(0,0,0,0.69);}
+.Input_a svg{
+    position: absolute;
+    right: 18px;
+    top: 12px;
+}
+.user_icons{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.user_icons a{
+    text-decoration: none;
+    color: #000;
+}
+.user{
+    display: block;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: center;
+}
+.Menu{
+    /* width: 50%; */
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    /* margin-left: 120px; */
+}
+.Menu select{
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    border: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    /* margin-right: 20px; */
+    
+}
+.Menu select:hover{
+    border-bottom: 3px solid #ffbf00;
+    color: #000;
+    margin-top: 0;
+    
+}
+.Menu a{
+    margin-top: 10px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #000;
+}
+.Menu a:hover{
+    border-bottom: 3px solid #ffbf00;
+    color: #000;
+    margin-top: 0;
+}
+.menu_2 select{
+    width: 100px;
+}
+/* Navbar ___2 */
+
+.Navbar_2{
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.Nav_search2{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+@media(min-width:1000px){
+    .Navbar_2{
+        display: none;
+    }
+    .Nav_search2{
+        display: none;
+    }
+    .menu_2{
+        display: none;
+    }
+}
+@media(max-width:1000px){
+    .Navbar{
+        display: none;
+    }
+    .Navbar_2{
+        /* width: 70vw; */
+    }
+    .Nav_right{
+        /* width: 40%; */
+    }
+    .m{
+        display: none;
+    }
+    .Menu{
+        justify-content: space-around;
+    }
+    .Menu a{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .Navbar_2{
+        display: block;
+        padding-top: 10px;
+    }
+    .Nav_right{
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+    }
+    .Nav_search2{
+        display: none;
+    }
+    .Nav_phone{
+        font-size: 5vw;
+        font-weight: 900;
+    }
+    .Menu select{
+        font-size: 15px;
+        background: none;
+        border: none;
+    }
+    .Nav_logo{
+        width: 80%;
+    }
+    .user{
+        font-size: 20px;
+        display: block;
+        font-weight: 500;
+    }
+}
